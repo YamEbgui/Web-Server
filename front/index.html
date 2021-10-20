@@ -9,11 +9,32 @@
     <title>Document</title>
 </head>
 <body>
-
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.6.0/validator.min.js" integrity="sha512-xYHcfaQeUiKHs9YsHqjpyLaHnh+q7y8kYuOGdh5FkJeK7Z+dZct7Yoa7h+PtsrKRh03t8eJZuSeCN7b0dkrFwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <form>
+        <div class="form-group">
+            <label for="formGroupExampleInput">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" class="form-control" id="age" placeholder="Age">
+            <div class="form-group">
+                <label for="abillity">Choose an abillity:</label>
+                <select id="abillity" name="cars" >
+                    <option value="">Choose one</option>
+                  <option value="Mind Reader">Mind Reader</option>
+                  <option value="time management">time management</option>
+                  <option value="known for planting trees">known for planting trees</option>
+                  <option value="Self-motivation">Self-motivation</option>
+                  <option value="quick learner">quick learner</option>
+                  <option value="Listen to Jazz Music">Listen to Jazz Music</option>
+                  <option value="Critical thinking">Critical thinking</option>
+                  <option value="Good communication">Good communication</option>
+                </select>
+          </div>
+             <button id="confirmBtn"  class="btn btn-primary mb-2">Confirm identity</button>
+</form>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src='index.js' defer ></script>
 </body>
 </html>
